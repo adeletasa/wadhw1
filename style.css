@@ -1,4 +1,19 @@
 header {
-    background-color: seagreen;
+    background-color: #80c29d;
     padding: 20px;
+}
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+}
+
+nav a:hover{
+    background-color: #468065;
+    border-radius: 10px;
 }
