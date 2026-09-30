@@ -1,6 +1,8 @@
 header {
     background-color: #80c29d;
     padding: 15px;
+    position: sticky;
+    top: 0;
 }
 nav {
     display: flex;
