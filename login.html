@@ -1,10 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PostIt homework</title>
 
-</body>
+    <!-- Connects the CSS file to the HTML page -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navigation bar -->
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+      </nav>
+    </header>
+
+    <!-- Login content -->
+    <main>
+      <article class="login">
+        <h3>Welcome to PostIt</h3>
+
+        <a href="#">Create an account</a>
+
+        <p>or</p>
+        <p>Please log in</p>
+
+        <form action="index.html">
+          <input type="email" name="email" placeholder="Email" required />
+
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+
+          <button type="submit">Log in</button>
+        </form>
+
+        <a href="#">Forget password</a>
+      </article>
+    </main>
+  </body>
 </html>

@@ -39,3 +39,42 @@ footer {
     background-color: #80c29d;
     text-align: center;
 }
+
+/* Login form */
+.login {
+    width: 250px;
+}
+
+.login h3 {
+    margin-top: 5px;
+}
+
+.login > a {
+    color: #468065;
+    text-decoration: none;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.login input {
+    width: 150px;
+    padding: 10px;
+    border: none;
+}
+
+.login button {
+    background-color: #468065;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.login button:hover {
+    background-color: #80c29d;
+}
