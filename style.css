@@ -5,7 +5,7 @@ body {
 }
 
 
-/* ---------- HEADER AND NAVIGATION ---------- */
+/* Header and navigation */
 
 /* Styles the header at the top of the page */
 header {
@@ -19,21 +19,21 @@ nav {
     gap: 20px;
 }
 
-/* Descendant selector: styles links inside the navigation bar */
+/* Descendant selector, styles links inside the navigation bar */
 nav a {
     text-decoration: none;
     padding: 5px;
     color: white;
 }
 
-/* Pseudo-class: changes the background when hovering over a link */
+/* Pseudo-class, changes the background when hovering over a link */
 nav a:hover {
     background-color: #468065;
     border-radius: 10px;
 }
 
 
-/* ---------- MAIN CONTENT ---------- */
+/* Main */
 
 /* Uses Flexbox to arrange the main content reverse order */
 main {
@@ -55,7 +55,7 @@ article {
 }
 
 
-/* ---------- POSTS ---------- */
+/* Posts */
 
 /* Places user information and date on opposite sides */
 .post-header {
@@ -97,7 +97,7 @@ article {
 }
 
 
-/* ---------- LOGIN PAGE ---------- */
+/* Login page */
 
 /* Makes the login box smaller than a regular post */
 .login {
@@ -106,7 +106,7 @@ article {
     margin-top: 40px;
 }
 
-/* Descendant selector: places login fields under each other */
+/* Descendant selector, places login fields under each other */
 .login form {
     display: flex;
     flex-direction: column;
@@ -138,25 +138,25 @@ article {
 }
 
 
-/* ---------- REQUIRED SELECTORS ---------- */
+/* Selectors */
 
 /* Child selector: selects paragraphs directly inside the login box */
 .login > p {
     margin: 5px;
 }
 
-/* Adjacent sibling selector: selects a paragraph directly after another paragraph */
+/* Adjacent sibling selector, selects a paragraph directly after another paragraph */
 .login p + p {
     margin-top: 0;
 }
 
-/* General sibling selector: selects the form that comes after the heading */
+/* General sibling selector, selects the form that comes after the heading */
 .login h3 ~ form {
     margin-top: 15px;
 }
 
 
-/* ---------- ADD POST PAGE ---------- */
+/* Add post page */
 
 /* Makes the Add Post box smaller */
 .add-post {
@@ -198,35 +198,11 @@ article {
 }
 
 
-/* ---------- FOOTER ---------- */
+/* Footer */
 
-/* Styles the bottom section of the page */
 footer {
     padding: 15px;
     background-color: #80c29d;
     text-align: center;
 }
 
-
-/* ---------- MOBILE VIEW ---------- */
-
-/* Makes posts and forms fit smaller cellphone screens */
-@media (max-width: 600px) {
-    main {
-        padding: 10px;
-    }
-
-    article {
-        width: 90%;
-    }
-
-    .post-header {
-        flex-direction: column;
-        gap: 5px;
-    }
-
-    .login,
-    .add-post {
-        width: 80%;
-    }
-}
